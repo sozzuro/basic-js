@@ -94,7 +94,7 @@ describe('Transform array', () => {
                 const { input, output } = createSample(i);
                 assert.deepStrictEqual(transform(input), output);
             }   
-        });
+        }); 
 
         it.optional('doesn\'t change initial array', () => {
             for(let i = 0; i < 50; i += 1) {
